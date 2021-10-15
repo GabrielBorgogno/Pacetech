@@ -1,6 +1,6 @@
 algoritmo "temperatura se, senao "
-// FunÁ„o : Converter F para C e mostrar sensaÁao termica
-// Autor : Gabriel Borgogno rODRIGUES
+// Fun√ß√£o : Converter F para C e mostrar sensa√ßao termica
+// Autor : Gabriel Borgogno Rodrigues
 // Data : 13/10/2021
 var F, C: real
 
@@ -9,12 +9,18 @@ inicio
 escreval("Escreva a temperatura em celsius: ")
 leia(C)
 F <- (C * 1.8) + 32
-escreval("Sua temperatura em Fahrenheit È de: " , F, "F")
+escreval("Sua temperatura em Fahrenheit √© de: " , F, "F")
 se C <= 15 entao
-escreval("Est· frio!!!" , F, "F")
+escreval("Est√° frio!!!" , F, "F")
+senao
+se C > 15 entao
+se C < 28 entao
+escreval("a temperatura esta agradavel")
 senao
 se C >= 28 entao
-escreval("Est· calor!!!" , F, "F")
+escreval("Est√° calor!!!" , F, "F")
+fimse
+fimse
 fimse
 fimse
 fimalgoritmo
