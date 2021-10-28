@@ -1,9 +1,8 @@
 algoritmo "Vetores de temperaturas"
-// Função : Gravar e Converter dados de temperaturas
+// FunÃ§Ã£o : Gravar e Converter dados de temperaturas
 // Autor : GABRIEL BORGOGNO RODRIUES
 // Data : 24/10/2021
-// Seção de Declarações///
-{NAO OBTIVE SUCESSO EM APLICAR O METODO BOLHA AS VETORES REAIS!!!}
+// SeÃ§Ã£o de DeclaraÃ§Ãµes///
 var
 opcao: literal
 C, F: vetor[1..4] de real
@@ -14,7 +13,7 @@ j, i: inteiro
 
 procedimento Mostrarmenu()
 inicio
-escreval("Olá escolha uma opção!")
+escreval("OlÃ¡ escolha uma opÃ§Ã£o!")
 escreval()
 escreval()
 escreval("1 - Fahrenheit para Celsius")
@@ -24,7 +23,7 @@ leia(opcao)
 fimprocedimento
 procedimento OrdenacaoNumeros
 inicio
-//Ordenação do vetor pelo metodo bolha
+//OrdenaÃ§Ã£o do vetor pelo metodo bolha
 para i de 1 ate 4 faca
    para j de 1 ate 4 faca
       se horario[i] < horario[j] entao
@@ -44,7 +43,7 @@ repita
 
    se opcao = "1" entao
       para j de 1 ate 4 faca
-         escreval("Horario da mediçao Numero" ,j )
+         escreval("Horario da mediÃ§ao Numero" ,j )
          leia(horario[j])
       fimpara
       limpatela
@@ -56,14 +55,14 @@ repita
        OrdenacaoNumeros
       para j de 1 ate 4 faca
         C[j] <- (F[j] - 32) * 5/9
-         escreval("temperatura", F[j], "º graus Fahremnheit, registrada as" , horario[j] ,  " H corresponde a " , C[j], " graus Celsius"  )
+         escreval("temperatura", F[j], "Âº graus Fahremnheit, registrada as" , horario[j] ,  " H corresponde a " , C[j], " graus Celsius"  )
       fimpara
    fimse
 
 
    se opcao = "2" entao
       para j de 1 ate 4 faca
-         escreval("Horario da mediçao Numero" ,j )
+         escreval("Horario da mediÃ§ao Numero" ,j )
          leia(horario[j])
       fimpara
       limpatela
@@ -75,7 +74,7 @@ repita
       OrdenacaoNumeros
       para j de 1 ate 4 faca
          F[j] <- (C[j] * 9/5) + 32
-         escreval("temperatura", C[j], "º graus Celsius, registrada as" , horario[j] ,  " H corresponde a " , F[j], " Fahrenheit"  )
+         escreval("temperatura", C[j], "Âº graus Celsius, registrada as" , horario[j] ,  " H corresponde a " , F[j], " Fahrenheit"  )
       fimpara
       fimse
       
